@@ -24,7 +24,7 @@ console.log(hasPassingGrade(100));
 console.log(hasPassingGrade(53));
 console.log(hasPassingGrade(87));
 
-unction studentMsg(totalScores, studentScore) {
+function studentMsg(totalScores, studentScore) {
   if (studentScore>=60){
 return 'Class average: '+`${getAverage(totalScores)}`+'. Your grade: '+`${getGrade(studentScore)}`+'. You passed the course.'
   }
