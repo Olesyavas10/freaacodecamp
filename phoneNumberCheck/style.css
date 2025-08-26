@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-grey: #1b1b32;
+  --light-grey: #f5f6f7;
+  --golden-yellow: #fecc4c;
+  --yellow: #ffcc4c;
+  --gold: #feac32;
+  --orange: #ffac33;
+  --dark-orange: #f89808;
+}
+
+body {
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+}
+
+body,
+#message-input:placeholder-shown {
+  text-align: center;
+}
+
+.main-text {
+  margin: 25px 0;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+label {
+margin: 10px auto 5px;
+color: black;
+}
+
+.phone-container {
+height: 300px;
+max-width: 60%;
+margin: 30px auto;
+border-radius: 15px;
+border: 15px solid black;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #928d86;
+}
+.phone-footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+}
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  margin: 10px auto;
+  color: var(--dark-grey);
+  background-color: #ffffff;
+background-image: linear-gradient(#ffffff, #928d86);
+border-color: #ffffff;
+border-width: 3px;
+}
+#user-input {
+display: block;
+margin: 10px auto;
+padding: 5px;
+border: 1px solid black;
+border-radius: 10px;
+text-align: var(--center-text);
+width: 90%;
+height: 42px;
+font-size: 16px;
+}
+
+#results-div {
+overflow-y: auto;
+height: 265px;
+width: 100%;
+}
+
+
