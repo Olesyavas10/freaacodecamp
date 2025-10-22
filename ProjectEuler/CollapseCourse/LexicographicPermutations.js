@@ -12,16 +12,16 @@ function lexicographicPermutations(n) {
 const nums=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 let result=[]
 
-for (let i=nums.length-1; i>=0; i++)
+for (let i=nums.length-1; i>=0; i--)
 {
 let blocksize=factorial(i)//размер блока
-let index=Math.floor((n-1)/blocksize) //блок i цифры === i цифра
+let index=Math.floor(n/blocksize) //блок i цифры === i цифра
 result.push(nums[index]) //добавляем первую цифру
 nums.splice(index, 1) //вырезаем эту цифру из массива
-n=n-index*blocksize //уменьшаем чтоб перейти в блоки следующие
+n=n%blocksize //уменьшаем чтоб перейти в блоки следующие
 }
 
-  return result.join('');
+  return Number(result.join(''))
 }
 
-lexicographicPermutations(999999)
+console.log(lexicographicPermutations(999999))
